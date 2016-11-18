@@ -1,0 +1,259 @@
+1.SDLC:
+=======
+            In software engineering, a software development methodology (also known as a system development methodology, software development life cycle, software development process, 
+software process) is a splitting of software development work into distinct phases (or stages) containing activities with the intent of better planning and management.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2.a.SharePOint:
+============
+SharePoint is a web based application that integrates with Microsoft Office. Launched in 2001, SharePoint is primarily sold as a document management
+ and storage system, but the product is highly configurable and usage varies substantially between organizations.
+2.b.Confluence:
+============
+Confluence is team collaboration software. Written in Java and mainly used in corporate environments,
+ it is developed and marketed by Atlassian. Confluence is sold as either on-premises software or as a software as a service.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+3.Code Review Tools:
+=================
+a.GERRIT:
+=======
+Gerrit is a free, web-based team code collaboration tool. Software developers in a team can review each other's modifications on their source code using a Web browser and approve or 
+reject those changes. 
+It integrates closely with Git, a distributed version control system.
+
+Gerrit is a fork of Rietveld, another code review tool. "Gerrit" is the given name of Gerrit Rietveld (1888–1964), a Dutch designer after whom Rietveld is named.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+4.Unit Testing:
+===========
+a.JUNIT:
+======
+JUnit is a unit testing framework for Java programming language. JUnit has been important in the development of test-driven development,
+ and is one of a family of unit testing frameworks collectively known as xUnit, that originated with JUnit.
+
+b.TestNG:
+========
+TestNG is a testing framework for the Java programming language created by Cédric Beust and inspired by JUnit and NUnit. The design goal of TestNG is to cover a wider range of test
+ categories: unit, functional,
+ end-to-end, integration, etc., with more powerful and easy-to-use functionalities.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+5.Build Systems:
+=============
+
+a.JENKINS:
+========
+Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for 
+software development. 
+It is a server-based system running in a servlet container such as Apache Tomcat.
+
+b.HUDSON:
+=========
+Hudson is a continuous integration (CI) tool written in Java, which runs in a servlet container such as Apache Tomcat or the GlassFish application server. It supports SCM tools including CVS, 
+Subversion, Git, 
+Perforce, Clearcase and RTC, and can execute Apache Ant and Apache Maven based projects, as well as arbitrary shell scripts and Windows batch commands.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+6.BUG SYSTEM:
+============
+A bug tracking system or defect tracking system is a software application that keeps track of reported software bugs in software development projects. It may be regarded as a type of issue 
+tracking system.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+7.Programming paradigm:
+====================
+A programming paradigm is a style or “way” of programming. Some languages make it easy to write in some paradigms but not others.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+8.COMPILED LANGUAGE vs INTEGRATED LANGUAGE:
+===========================================
+
+    Interpreted language is executed at the run time according to the instructions like in shell scripting and compiled language is one which is 
+compiled (changed into Assembly language, which CPU can understand ) and then executed like in c++.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                
+
+
+                                                                                                                  RESTful WebServices 
+                                                                                                 ================================
+01.INTRODUCTION:
+================
+The term REST was introduced by ROY FIELDING. REST is expanded as REpresentational State Transfer.It is an architectural style. There are no rules,protocol standard ,communication channel 
+standard,
+service definition and no specifications.REST does notneed of any documentation but it has WADL ,but it is not used  by most of the users.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+02.REST and HTTP:
+===============
+HTTP:
+=====
+HyperText TransferProtocol,used to exchange and communicate information online . This information is known as hypertext. The logical links are known as hyperlinks. REST has resources and 
+addresses too.It contains metadata(extra information).It has HTTP methods commonly GET,PUT,POST,DELETE. It also contains STATUS CODES,which indicate whether the response is successful or is
+there any error in it. In RESTful Web Services, we cannot send readable messages because client is a piece of code, so we need to send status codes.
+
+FORMAT OF MESSAGES: 
+===================
+Header value called content type (metadata) specifies the format of the messages.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+03.RESOURCE URI's:
+=================
+There are two levels ,first level and the second level.
+Resourse URIS's: 
+                          The resources consists of directiories. The directories contains set of collection of files in it , which can be accessed through URI's.
+BEST PRACTICES OF WRITING REST API's:
+=================================
+                           1.Identify the entities ,they become resources.
+                           2.Assign URI's to those resources.
+RESOURCE RELATION:
+==================
+                           The relation can be made between the resources. The format will be 
+                                             /Messages/{messageid}/comments/{commentsid}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+04.COLLECTION URI's:
+==================
+                            There are two types of URI's: Instance and collection.
+Instance URI is nothing but getting information about a single instance whereas COLLECTION URI is about getting the information about ALL the instance in the directory.
+FILTERING RESULTS:
+================
+                       Filtering can be done using query parameter(?). Query parameter is used for pagination and for filtering collection URI's.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+05.HTTP METHODS:
+================
+                      The difference between normal URI and RESTful URI is that all the operations are made in the client side by using differen HTTPmethods and based on the HTTP methods
+the operations will be performed.
+Common HTTP Methods are GET, PUT, POST, DELETE.
+It is applicable to collection URI's also.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+06.METHOD IDEMPOTENCE:
+=======================
+                        The classification can be made in two different ways.
+One is by making use of read and write operations. That is, GET is READ ONLY but PUT, POST, DELETE are write operations in the server.
+The second way of classification is based upon Repeatable and Non-repeatable operations.
+The methods GET, PUT and DELETE can be safely repeated so it is IDEMPOTENT but POST operation cannot be safely repeated so it is NON-IDEMPOTENT.
+
+IDEMPOTENCE:
+==============
+                           Idempotence is the property of certain operations in Mathematics and Computer Science, that can be applied multiple times without changing the result beyond the initial
+application.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+07.REST RESPONSE :
+=================
+                      The response for Web Application will be in HTML(Styling should be done).
+                      The response for RESTful Web Services will be in XMl/JSON.
+
+JSON's response for the request will contain same datamember entity filled with the response values in it.
+Header contains message length , data and the Content Type.
+
+STATUS CODES:
+=============
+                    The very first line contains the status code followed by which have the short message description for the code.
+                                    Eg. 200 OK, 404 NOT FOUND
+The status codes ranges from 100 to 500. We have five classes in it ie. 1XX to 5XX.
+                           1XX- Informational code/acknowledgement. 
+                           2XX- Success code ie.200 OK,201 CREATED.
+                           3XX- Redirection codes ie. 302 FOUND, 307 TEMPORARY REDIRECT.
+                           4XX- Client Error ,ie. 400 BAD REQUEST, 404 NOT FOUND.
+                           5XX- Server error, ie.500 INTERNAL SERVER ERROR
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+08.HATEOAS:
+===========
+                HATEOAS is a way to provide links to resources in the API response, so that the client does not have to deal with the URI construction and bussiness flow.
+
+                 It is expanded as
+                                              Hypermedia
+                                              As
+                                              The
+                                              Engine
+                                              Of
+                                              Application   
+                                              State
+It contains hypertext and hyperlinks. We have "rel" attribute.
+
+rel ATTRIBUTE:
+============
+                    rel Attribute is used to specify the relationship between the current document and the link. rel Attribute is a part of HTTP Specification.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+09.THE RICHARDSON MATURITY MODEL:
+==================================
+                                    It was developed by LEONARD RICHARDSON.
+It has three levels:                
+                                    level 3
+                                    level 2
+                                    level 1
+ 
+                                    level 0: it is not a RESTful API.
+
+LEVEL 0:
+========
+             It contains one URI. The request body contains all the details. It is often called as SWAMP OF POX(Plain Old XML).
+
+LEVEL 1:
+========
+            By refining the LEVEL 0 by adding RESOURCE URI, then we reach LEVEL 1. Individual URI's for each response.
+
+LEVEL 2:
+========
+           By refining the LEVEL 1 by using different HTTP METHODS for different operations , then we reach LEVEL 2. It also uses the STATUS CODES.
+
+LEVEL 3:
+========
+           Implementing HATEOAS will reach LEVEL 3. Response have links that the client can use. It is considered as FULLY RESTful API.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+10.JAX-RS:(interfaces and annotatins)
+==============================
+              JAX-RS contains libraries like Jersey and RESTEasy .
+The library classes contains JAX-RS in it defaultly.
+Just by adding it up with the application code will make a REST API Application 
+JERSEY:
+=======
+            "Reference implementation " for the JAX-RS specification.   
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------       
