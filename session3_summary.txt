@@ -1,0 +1,60 @@
+                                                                                     SESSION 3-OVERVIEW
+                                                 =========================================================
+
+Web Services:
+===========
+
+Web services are open standard (XML, SOAP, HTTP etc.) based Web applications that interact with other web applications for the purpose of exchanging data.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+BENFITS Of WebServices :
+====================
+i)Web Services can convert your existing applications into Web-applications.
+ii)Interoperability
+iii)Standardized Protocol
+iv)Low Cost of Communication
+
+Difference between Web Services and Web Applications:
+=============================================
+Web applications are intended for users and web services are intended for other applications.Web applications usually present data in HTML which looks nice to 
+the user and web services usually present data in XML which easy to parse by other applications.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Horizontal scaling Vs Vertical Scaling:
+==============================
+Horizontal scaling means that you scale by adding more machines into your pool of resources whereas Vertical scaling means that you scale by adding more power (CPU, RAM) 
+to an existing machine.
+
+An easy way remember this is to think of a machine on a server rack, we add more machines across the horizontal direction and add more resources to a machine in the vertical direction.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Apache Archetype:
+===============
+Archetype is a Maven project templating toolkit. ... Archetype will help authors create Maven project templates for users, and provides users with the means to generate parameterized
+ versions of those project templates.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Build Tools:
+=========
+In order to bring our code into production, you need to have a usable software image that can be run and deployed. That’s where build tools come in. They take your source code and 
+compile it into an executable program. These days, build tools bring more to the table then just building our app, with features like dependency management as well.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In the Java world, there are three main build tools: Ant, Maven, and Gradle. 
+
+
+Ant:
+===
+Apache’s Ant is an open source Java library and command-line tool used for automating software build processes. It’s primarily used for building Java applications. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Maven:
+======
+Apache’s Maven is a build automation tool primarily for Java projects, and is the most popular choice for Java developers today by the usage numbers. Unlike Apache Ant,
+ it uses conventions for the build procedure, and only exceptions need to be written down.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gradle:
+======
+Gradle is an open source build automation system. With version 1.0 released in 2012, Gradle aims to “combine the power and flexibility of Ant with the dependency management
+ and conventions of Maven into a more effective way to build.” Its build scripts are written in Groovy, not XML, which creates a host of different advantages and disadvantages 
+compared to Ant or Maven.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
