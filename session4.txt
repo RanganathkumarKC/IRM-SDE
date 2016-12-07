@@ -1,0 +1,100 @@
+What are Environment Variables?
+
+Environment variables hold values related to the current environment, like the Operating System or user sessions.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PATH:
+=====
+PATH: maintains a list of directories. The OS searches the PATH entries for executable programs, such as Java Compiler (javac) and Java Runtime (java).
+
+One of the most well-known is called PATH on Windows, Linux and Mac OS X. It specifies the directories in which executable programs* 
+are located on the machine that can be started without knowing and typing the whole path to the file on the command line. (Or in Windows,
+ the Run dialog in the Start Menu or Win+R).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CLASSPATH:
+==========
+CLASSPATH: maintain a list of directories (containing many Java class files) and JAR file (a single-file archive of Java classes). The Java Compiler and
+ Java Runtime searches the CLASSPATH entries for Java classes referenced in your program.
+For ease of distribution, Java classes are often archived (zipped) together into a so-called JAR file. To use a third-party Java package, you need to
+ place the distributed JAR file in a location that is available to the Java Compiler and Java Runtime.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CLASS LOADERS AND TYPES:
+=======================
+
+Class loaders are the part of the Java Runtime Environment that dynamically loads Java classes into the Java virtual machine. It is responsible for
+ locating libraries, reading there content and loading the classes contained within the libraries. When JVM is started three class loaders are used
+
+1. Bootstrap class loader
+
+2. Extensions class loader
+
+3. System class loader
+
+Bootstrap class loader loads the core java libraries. It is written in native code. The bootstrap class loader is responsible for loading key java classes
+ like java.lang.Object and other runtime code into memory. The runtime classes are packaged inside jre/lib/rt.jar file.
+
+Extensions class loader loads the code in the extension directories. It is implemented by ExtClassLoader class.
+
+System class loader the code found on the java.class.path which map to the system class path variables. It is implemented by AppClassLoader class.
+ All user classes by default are load by the system class loader.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NAMING A JAVA FILE:
+=================
+
+If we use a pubilc class in the java program ,then the name of the java file must be the name of the public class specified in the program.
+If there are no public class in the program, then the name of the file can be anything.
+Note that ,there should not be more than one public class in the program.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ECLIPSE TRICKS:
+=============
+ - DISCOVERING SHORTCUT KEYS
+
+Press Ctrl + Shift + L to open a widget that shows all the shortcut keys.
+
+- CONTENT ASSIST
+
+In the Java editor press Ctrl + Space to see a list of suggested completions. Typing one or more characters before clicking Ctrl + Space will shorten the list.
+
+ - PARAMETER HINT
+
+When the cursor is in a method argument, press Ctrl + Shift + Space to see a list of parameter hints.
+
+ - CAMEL CASE SUPPORT IN CODE COMPLETION
+
+Code completion supports camel case patterns. Entering NPE and clicking Ctrl + Space will propose NullPointerException and NoPermissionException.
+
+ - CREATING GETTERS AND SETTERS
+
+Click on Source ? Generate Getter and Setter to open the wizard that allows you to generate getter and setter methods.
+
+ - GENERATING HASHCODE() AND EQUALS() METHODS
+
+Click on Source ? Generate hashCode() and equals() to generate this methods for a Java class.
+
+ - ADDING CODE AROUND A BLOCK OF CODE
+
+Select a block of code and press Alt+Shift+Z to see a menu of items like if statement, for loop, try/catch etc that can enclose the selected block of code.
+
+ - LOCATING A MATCHING BRACKET
+
+Select an opening or closing bracket and press Ctrl+Shift+P to find its matching bracket.
+
+ - SMART JAVADOC
+
+Type '/**' and press Enter to automatically addes a Javadoc comment stub.
+
+ - ORGANIZAING IMPORTS
+
+Press Ctrl+Shift+O to organize all the imports.
+
+ - ACTIVATING THE MENU BAR
+
+Press F10 to activate the Menu bar.
+
+ - MAKING A VIEW/EDITOR ACTIVE
+
+Press Ctrl+F7 to see a list of open views and editor area and switch to one of them.
+
